@@ -1,6 +1,33 @@
 {
   "initalState": {
-    "mylist": [],
+    "mylist": [
+      {
+        "id": 1,
+        "slug": "tvshow-2",
+        "title": "Stranger Things",
+        "type": "Scripted",
+        "language": "English",
+        "year": 2008,
+        "contentRating": "16+",
+        "duration": 120,
+        "cover": "http://dummyimage.com/800x600.png/99118E/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 2,
+        "slug": "tvshow",
+        "title": "La Casa de Papel",
+        "type": "Adventure",
+        "language": "English",
+        "year": 2010,
+        "contentRating": "16+",
+        "duration": 250,
+        "cover": "http://dummyimage.com/800x600.png/302140/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      }
+    ],
     "trends": [
       {
         "id": 2,
