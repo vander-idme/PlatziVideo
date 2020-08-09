@@ -21,7 +21,8 @@ const App = () => {
     <div className="App">
       <Header />
       <Search />
-      {initialState.mylist !== undefined && initialState.mylist.length > 0 && (
+
+      {initialState.mylist !== undefined && initialState.trends.length > 0 && (
         <Categories title="Mi Lista">
           <Carousel>
             {initialState.mylist !== undefined && initialState.mylist.map(item => 
@@ -31,22 +32,27 @@ const App = () => {
         </Categories>
       )}
 
-      <Categories title="Tendencias">
+      {initialState.trends !== undefined && initialState.trends.length > 0 && (
+        <Categories title="Tendencias">
         <Carousel>
           {initialState.trends !== undefined && initialState.trends.map(item => 
             <CarouselItem key={item.id} {...item}/>
           )}
         </Carousel>
       </Categories>
+      )}
+      
 
-      <Categories title="Originales de Platzi Video">
+      {initialState.originals !== undefined && initialState.originals.length > 0 && (
+        <Categories title="Originales de Platzi Video">
         <Carousel>
           {initialState.originals !== undefined && initialState.originals.map(item => 
             <CarouselItem key={item.id} {...item}/>
           )}
         </Carousel>
       </Categories>
-
+      )}
+      
       <Footer />
     </div>
   )
