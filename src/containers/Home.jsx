@@ -13,7 +13,7 @@ import '../assets/styles/App.scss'
 const API = 'http://localhost:3000/initalState'
 
 
-const App = () => {
+const Home = () => {
 
   const initialState = useInitialState(API)
 
@@ -22,7 +22,7 @@ const App = () => {
       <Header />
       <Search />
 
-      {initialState.mylist !== undefined && initialState.trends.length > 0 && (
+      {initialState.mylist !== undefined && initialState.mylist.length > 0 && (
         <Categories title="Mi Lista">
           <Carousel>
             {initialState.mylist !== undefined && initialState.mylist.map(item => 
@@ -58,4 +58,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home
